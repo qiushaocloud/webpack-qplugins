@@ -148,3 +148,13 @@ Tapable是Webpack的一个核心工具，Webpack中许多对象扩展自Tapable�
 - tapPromise 异步钩子，返回一个Promise告诉Webpack异步执行完毕
 
 ##### 详细内容参考: https://www.qiushaocloud.top/2024/01/04/zhuan-zai-bian-xie-webpack-zi-ding-yi-cha-jian.html
+
+
+
+#### 开源不易，如果对您有帮助，请您动一动您的小手，给作者点 Star，也请您多多关注分享者「[邱少羽梦](https://www.qiushaocloud.top)」
+
+* 分享者邮箱: [qiushaocloud@126.com](mailto:qiushaocloud@126.com)
+* [分享者博客](https://www.qiushaocloud.top)
+* [分享者自己搭建的 gitlab](https://gitlab.qiushaocloud.top/qiushaocloud) 
+* [分享者 gitee](https://gitee.com/qiushaocloud/dashboard/projects) 
+* [分享者 github](https://github.com/qiushaocloud?tab=repositories) 
