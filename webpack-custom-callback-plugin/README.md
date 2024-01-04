@@ -2,7 +2,7 @@
 主要封装一个自定义回调的 webpack 插件，根据传入的回调注册对应的钩子
 
 ### 项目源码
-* 自建 gitlab 地址: https://gitlab.qiushaocloud.top:61024/qiushaocloud/webpack-qplugins
+* 自建 gitlab 地址: https://gitlab.qiushaocloud.top/qiushaocloud/webpack-qplugins
 * github 地址: https://github.com/qiushaocloud/webpack-qplugins
 
 ### npm 包
