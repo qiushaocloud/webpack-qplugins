@@ -87,10 +87,23 @@ module.exports = {
     new WebpackCustomCallbackPlugin({
       paramKey: 'paramValue'
     }, {
-        // applyCompiler: (compiler, options, callbacks) => {},
+        // applyCompiler: (compiler, options, callbacks) => {// code...},
         doneTap: (options, ...args) => {},
-        // doneTapAsync: (callback, options, compilation, ...args) => {},
-        // doneTapPromise: (resolve, reject,  options, compilation, ...args) => {},
+        // doneTapAsync: (callback, options, compilation, ...args) => {
+        //   // async code...
+        //   setTimeout(() => {
+        //     // code...
+        //     callback();
+        //   }, 10000);
+        // },
+        // doneTapPromise: (resolve, reject,  options, compilation, ...args) => {
+        //   // async code...
+        //   setTimeout(() => {
+        //     // code...
+        //     resolve();
+        //     // reject();
+        //   }, 10000);
+        // },
     }),
   ]
 };
