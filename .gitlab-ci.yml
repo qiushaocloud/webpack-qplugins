@@ -24,6 +24,8 @@ publish-webpack-custom-callback-plugin:
   only:
     - tags
   script:
+    - apk add --no-cache nodejs npm
+    - node -v && npm -v
     - cp -ra .npmrc.tpl webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<NPM_REGISTRY_HOST>#npm.qiushaocloud.top:4873#g" webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN>#$QIUSHAOCLOUD_SELF_NPMJS_PUBLISH_TOKEN#g" webpack-custom-callback-plugin/.npmrc
