@@ -1,16 +1,18 @@
 {
-  "name": "@qiushaocloud/webpack-custom-callback-plugin",
-  "version": "1.0.1",
-  "description": "this is an npm package of qiushaocloud webpack custom callback plugin",
+  "name": "@qiushaocloud/webpack-dts-bundle-plugin",
+  "version": "1.0.0",
+  "description": "this is an npm package of qiushaocloud webpack dts bundle plugin",
   "author": "qiushaocloud",
   "license": "MIT",
   "main": "./index.js",
   "types": "./index.d.ts",
-  "keywords": ["https://www.qiushaocloud.top", "qiushaocloud", "@qiushaocloud/webpack-custom-callback-plugin", "webpack-custom-callback-plugin"],
+  "keywords": ["https://www.qiushaocloud.top", "qiushaocloud", "@qiushaocloud/webpack-dts-bundle-plugin", "webpack-dts-bundle-plugin"],
   "scripts": {
     "inner-publish-npmjs": "npm publish --registry https://registry.npmjs.org/ --access=public --token=$NPM_QIUSHAOCLOUD_PUBLISH_TOKEN",
     "inner-publish-qiushaocloud-npmjs": "npm publish --registry https://npm.qiushaocloud.top:4873/ --access=public --token=$QIUSHAOCLOUD_SELF_NPMJS_PUBLISH_TOKEN"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "dts-bundle": "^0.7.3"
+  }
 }

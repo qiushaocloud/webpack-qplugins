@@ -13,7 +13,7 @@
 declare module '@qiushaocloud/webpack-custom-callback-plugin' {
     import { Compiler, Compilation } from 'webpack';
 
-    export type IOptions = Record<string, any>;
+    export type IOptions = Record<string, any> | undefined;
 
     export interface ITapHookFn {
         (options: IOptions, ...args: any[]): void;
@@ -54,7 +54,6 @@ declare module '@qiushaocloud/webpack-custom-callback-plugin' {
 
     export interface ICallbacks extends ICallbacksExcludeApplyCompiler {
         applyCompiler?: IApplyCompilerFn;
-       
     }
     
     export class WebpackCustomCallbackPlugin {
@@ -76,7 +75,9 @@ module.exports = {
     // 传入插件实例
     new WebpackCustomCallbackPlugin({
       paramKey: 'paramValue'
-    }, (...args) => {}),
+    }, (options, ...args) => {
+      // doneTap handle code ...
+    }),
   ]
 };
 
@@ -87,8 +88,12 @@ module.exports = {
     new WebpackCustomCallbackPlugin({
       paramKey: 'paramValue'
     }, {
-        // applyCompiler: (compiler, options, callbacks) => {// code...},
-        doneTap: (options, ...args) => {},
+        // applyCompiler: (compiler, options, callbacks) => {
+        //   // applyCompiler handle code ...
+        // },
+        doneTap: (options, ...args) => {
+          // doneTap handle code ...
+        },
         // doneTapAsync: (callback, options, compilation, ...args) => {
         //   // async code...
         //   setTimeout(() => {

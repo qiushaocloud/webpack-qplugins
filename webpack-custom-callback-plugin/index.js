@@ -1,11 +1,13 @@
 class WebpackCustomCallbackPlugin {
-    constructor (options={}, callbacks={}) {
+    constructor (options, callbacks) {
         this.options = options;
         this.callbacks = callbacks;
     }
   
     apply (compiler) {
-        if (!this.callbacks) return;
+        if (!this.callbacks)
+            return console.error('apply callbacks is empty');
+
         if (typeof this.callbacks === 'function') {
             this._bindTapHook(compiler, 'done', this.callbacks);
             return;

@@ -1,7 +1,7 @@
 declare module '@qiushaocloud/webpack-custom-callback-plugin' {
     import { Compiler, Compilation } from 'webpack';
 
-    export type IOptions = Record<string, any>;
+    export type IOptions = Record<string, any> | undefined;
 
     export interface ITapHookFn {
         (options: IOptions, ...args: any[]): void;
@@ -42,7 +42,6 @@ declare module '@qiushaocloud/webpack-custom-callback-plugin' {
 
     export interface ICallbacks extends ICallbacksExcludeApplyCompiler {
         applyCompiler?: IApplyCompilerFn;
-       
     }
     
     export class WebpackCustomCallbackPlugin {

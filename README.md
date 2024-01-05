@@ -6,6 +6,9 @@ qiushaocloud webpack 自定义插件集合
 > * 主要封装一个自定义回调的 webpack 插件，根据传入的回调注册对应的钩子
 > * [对应 MD 文件: webpack-custom-callback-plugin/README.md](webpack-custom-callback-plugin/README.md)
 
+### webpack-dts-bundle-plugin
+> * 主要封装一个 dts bundle 插件，依赖 dts-bundle, 主要作用是将多个 d.ts 根据引用关系合成一个 d.ts
+> * [对应 MD 文件: webpack-dts-bundle-plugin/README.md](webpack-dts-bundle-plugin/README.md)
 
 
 #### 参与贡献
