@@ -30,26 +30,26 @@ publish-webpack-plugins:
     - cp -ra .npmrc.tpl webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<NPM_REGISTRY_HOST>#npm.qiushaocloud.top:4873#g" webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN>#$QIUSHAOCLOUD_SELF_NPMJS_PUBLISH_TOKEN#g" webpack-custom-callback-plugin/.npmrc
-    - cd webpack-custom-callback-plugin && ls -la && cat .npmrc && npm publish --access=public
+    - cd webpack-custom-callback-plugin && ls -la && cat .npmrc && npm publish --access=public || true
     - rm -rf .npmrc
     - cd ..
     - cp -ra .npmrc.tpl webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<NPM_REGISTRY_HOST>#registry.npmjs.org#g" webpack-custom-callback-plugin/.npmrc
     - sed -i "s#<CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN>#$CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN#g" webpack-custom-callback-plugin/.npmrc
-    - cd webpack-custom-callback-plugin && ls -la && cat .npmrc && npm publish --access=public
+    - cd webpack-custom-callback-plugin && ls -la && cat .npmrc && npm publish --access=public || true
     - rm -rf .npmrc
     - cd ..
     # webpack-dts-bundle-plugin
     - cp -ra .npmrc.tpl webpack-dts-bundle-plugin/.npmrc
     - sed -i "s#<NPM_REGISTRY_HOST>#npm.qiushaocloud.top:4873#g" webpack-dts-bundle-plugin/.npmrc
     - sed -i "s#<CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN>#$QIUSHAOCLOUD_SELF_NPMJS_PUBLISH_TOKEN#g" webpack-dts-bundle-plugin/.npmrc
-    - cd webpack-dts-bundle-plugin && ls -la && cat .npmrc && npm publish --access=public
+    - cd webpack-dts-bundle-plugin && ls -la && cat .npmrc && npm publish --access=public || true
     - rm -rf .npmrc
     - cd ..
     - cp -ra .npmrc.tpl webpack-dts-bundle-plugin/.npmrc
     - sed -i "s#<NPM_REGISTRY_HOST>#registry.npmjs.org#g" webpack-dts-bundle-plugin/.npmrc
     - sed -i "s#<CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN>#$CI_NPM_QIUSHAOCLOUD_PUBLISH_TOKEN#g" webpack-dts-bundle-plugin/.npmrc
-    - cd webpack-dts-bundle-plugin && ls -la && cat .npmrc && npm publish --access=public
+    - cd webpack-dts-bundle-plugin && ls -la && cat .npmrc && npm publish --access=public || true
     - rm -rf .npmrc
     - cd ..
   tags:
