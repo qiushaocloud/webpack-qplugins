@@ -1,6 +1,6 @@
 {
   "name": "@qiushaocloud/webpack-dts-bundle-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this is an npm package of qiushaocloud webpack dts bundle plugin",
   "author": "qiushaocloud",
   "license": "MIT",

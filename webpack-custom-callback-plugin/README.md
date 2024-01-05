@@ -6,7 +6,7 @@
 * github 地址: https://github.com/qiushaocloud/webpack-qplugins
 
 ### npm 包
-* 安装 npm 包: `npm install --save @qiushaocloud/webpack-custom-callback-plugin`
+* 安装 npm 包: `npm install --save-dev @qiushaocloud/webpack-custom-callback-plugin`
 
 ### 插件 TS 定义
 ``` typescript
